@@ -296,6 +296,7 @@ MonoBehaviour:
   cube: {fileID: 1270012449116211953, guid: f9983d0d8fb461941b5fde1a727ad0da, type: 3}
   white: {fileID: 2100000, guid: 319b8190652e5e84992541d946a7328a, type: 2}
   black: {fileID: 2100000, guid: e393536acd4250a41a914b35790ad546, type: 2}
+  knight: {fileID: 1992623236052302, guid: 85ad2c556fdbd5747ac7f5f67f10e59b, type: 3}
 --- !u!4 &655045171
 Transform:
   m_ObjectHideFlags: 0
@@ -387,11 +388,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1222647500}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: 0.46025434, y: -0, z: -0, w: 0.88778716}
+  m_LocalPosition: {x: 3.6, y: 8.67, z: -4.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 54.807, y: 0, z: 0}
