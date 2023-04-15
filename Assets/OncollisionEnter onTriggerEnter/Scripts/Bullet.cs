@@ -5,10 +5,22 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    private bool isActive = true;
     private void OnCollisionEnter(Collision collision)
     {
-        Rigidbody rb = transform.GetComponent<Rigidbody>();
-        rb.useGravity = true;
-        rb.velocity = new Vector3(0, 0, 0);
+        if (!isActive) return;
+        isActive = false;
+        // Debug.Log(collision.gameObject.name);
+        GetComponent<Rigidbody>().useGravity = true;
+        // Rigidbody rb = transform.GetComponent<Rigidbody>();
+        // rb.useGravity = true;
+        // rb.velocity = new Vector3(0, 0, 0);
+
+        Enemy enemy = collision.gameObject.GetComponent<Enemy>();
+        Debug.Log(enemy);
+        if (enemy)
+        {
+            enemy.Hit();
+        }
     }
 }
